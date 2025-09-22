@@ -1,29 +1,14 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { Router, withRouter } from "react-router-dom";
-import {
-  createTheme,
-  ThemeProvider,
-  Theme,
-  StyledEngineProvider,
-  adaptV4Theme,
-} from "@mui/material";
+import { ThemeProvider, Theme, StyledEngineProvider } from "@mui/material";
 
 // @ts-ignore
 import { OktaAuth, toRelativeUrl } from "@okta/okta-auth-js";
 import { Security } from "@okta/okta-react";
 import { history } from "./utils/historyUtils";
 import AppOkta from "./containers/AppOkta";
-
-const theme = createTheme(
-  adaptV4Theme({
-    palette: {
-      secondary: {
-        main: "#fff",
-      },
-    },
-  })
-);
+import { libertyMutualTheme } from "./theme/libertyMutualTheme";
 
 const root = createRoot(document.getElementById("root")!);
 
@@ -49,7 +34,7 @@ if (process.env.VITE_OKTA) {
   root.render(
     <Router history={history}>
       <StyledEngineProvider injectFirst>
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={libertyMutualTheme}>
           <AppWithRouter />
         </ThemeProvider>
       </StyledEngineProvider>
