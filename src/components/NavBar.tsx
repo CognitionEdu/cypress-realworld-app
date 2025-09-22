@@ -29,8 +29,8 @@ import { Link as RouterLink, useLocation } from "react-router-dom";
 
 import { DataContext, DataEvents, DataSchema } from "../machines/dataMachine";
 import TransactionNavTabs from "./TransactionNavTabs";
-import RWALogo from "./SvgRwaLogo";
-import RWALogoIcon from "./SvgRwaIconLogo";
+import LibertyMutualLogo from "./SvgRwaLogo";
+import LibertyMutualLogoIcon from "./SvgRwaIconLogo";
 
 const drawerWidth = 240;
 
@@ -84,14 +84,15 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
 
   [`& .${classes.newTransactionButton}`]: {
     fontSize: 16,
-    backgroundColor: "#00C853",
+    backgroundColor: "#FFD000",
+    color: "#003366",
     paddingTop: 5,
     paddingBottom: 5,
     paddingRight: 20,
     fontWeight: "bold",
     "&:hover": {
-      backgroundColor: "#4CAF50",
-      borderColor: "#00C853",
+      backgroundColor: "#E6BB00",
+      borderColor: "#FFD000",
       boxShadow: "none",
     },
   },
@@ -154,9 +155,9 @@ const NavBar: React.FC<NavBarProps> = ({ drawerOpen, toggleDrawer, notifications
             underline="hover"
           >
             {xsBreakpoint ? (
-              <RWALogoIcon className={classes.logo} />
+              <LibertyMutualLogoIcon className={classes.logo} />
             ) : (
-              <RWALogo className={classes.logo} />
+              <LibertyMutualLogo className={classes.logo} />
             )}
           </Link>
         </Typography>

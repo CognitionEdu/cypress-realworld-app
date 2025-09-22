@@ -42,7 +42,7 @@ const classes = {
   accountBalance: `${PREFIX}-accountBalance`,
   amount: `${PREFIX}-amount`,
   accountBalanceHidden: `${PREFIX}-accountBalanceHidden`,
-  cypressLogo: `${PREFIX}-cypressLogo`,
+  libertyMutualLogo: `${PREFIX}-libertyMutualLogo`,
 };
 
 const StyledDrawer = styled(Drawer)(({ theme }) => ({
@@ -105,7 +105,7 @@ const StyledDrawer = styled(Drawer)(({ theme }) => ({
     display: "none",
   },
 
-  [`& .${classes.cypressLogo}`]: {
+  [`& .${classes.libertyMutualLogo}`]: {
     width: "40%",
   },
 }));

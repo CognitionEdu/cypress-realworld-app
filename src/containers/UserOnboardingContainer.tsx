@@ -72,7 +72,7 @@ const UserOnboardingContainer: React.FC<Props> = ({ authService, bankAccountsSer
   return (
     <Dialog data-test="user-onboarding-dialog" fullScreen={fullScreen} open={dialogIsOpen}>
       <DialogTitle data-test="user-onboarding-dialog-title">
-        {userOnboardingState.matches("stepOne") && "Get Started with Real World App"}
+        {userOnboardingState.matches("stepOne") && "Get Started with Liberty Mutual Financial App"}
         {userOnboardingState.matches("stepTwo") && "Create Bank Account"}
         {userOnboardingState.matches("stepThree") && "Finished"}
       </DialogTitle>
@@ -83,7 +83,7 @@ const UserOnboardingContainer: React.FC<Props> = ({ authService, bankAccountsSer
               <NavigatorIllustration />
               <br />
               <DialogContentText style={{ paddingLeft: 20 }}>
-                Real World App requires a Bank Account to perform transactions.
+                Liberty Mutual Financial App requires a Bank Account to perform transactions.
                 <br />
                 <br />
                 Click <b>Next</b> to begin setup of your Bank Account.
@@ -105,7 +105,7 @@ const UserOnboardingContainer: React.FC<Props> = ({ authService, bankAccountsSer
                 You're all set!
                 <br />
                 <br />
-                We're excited to have you aboard the Real World App!
+                We're excited to have you aboard the Liberty Mutual Financial App!
               </DialogContentText>
             </>
           )}
