@@ -7,7 +7,7 @@ export const libertyMutualTheme = createTheme(
         main: "#FFD000",
       },
       secondary: {
-        main: "#003366",
+        main: "#06748C", // Liberty Mutual authentic teal/blue (rgb(6, 116, 140))
       },
       background: {
         default: "#f5f5f5",
